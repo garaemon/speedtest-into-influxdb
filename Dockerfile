@@ -1,6 +1,6 @@
-FROM alpine:3.5
+FROM debian:jessie
 
-RUN apk add --no-cache ca-certificates python3 curl
+RUN apt-get update && apt-get install -y python3 python3-pip curl
 
 ENV SPEEDTEST_VERSION 1.0.2
 

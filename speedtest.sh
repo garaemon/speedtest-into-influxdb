@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-timestamp=$(date +%s%N)
+#alpine timestamp does not support %N format.
+timestamp=$(date +%s)000000000
 hostname=$(hostname)
 
 echo "Current timestamp: $timestamp"

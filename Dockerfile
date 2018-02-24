@@ -1,6 +1,6 @@
-FROM debian:jessie
+FROM easypi/alpine-arm
 
-RUN apt-get update && apt-get install -y python3 python3-pip curl
+RUN apk add --no-cache ca-certificates python3 curl
 
 ENV SPEEDTEST_VERSION 1.0.2
 
